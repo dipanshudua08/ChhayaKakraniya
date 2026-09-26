@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chhaya Mehndi &amp; Arts | Bridal mehndi, paintings and custom artwork</title>
+  <meta name="description" content="Chhaya creates bridal and festive mehndi, hand-painted canvases, portraits and custom artwork. Browse the gallery and book on WhatsApp.">
+  <meta name="theme-color" content="#17362b">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317362b'/%3E%3Cpath d='M32 10c10 10 12 24 0 44C20 34 22 20 32 10z' fill='%23dcbb75'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Hind:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#gallery">Skip to gallery</a>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home" aria-label="Chhaya Mehndi and Arts, home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M20 6c6 6 7.5 15 0 28C12.500 21 14 12 20 6z" fill="currentColor"/>
+        <path d="M20 12v20" stroke="var(--brand-vein)" stroke-width="1.2" fill="none"/>
+      </svg>
+      <span class="brand-text"><span class="brand-name">Chhaya</span><span class="brand-sub">Mehndi &amp; Arts</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#gallery">Gallery</a>
+      <a href="#featured-mehndi">Featured</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#custom">Custom art</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn--gold nav-cta" data-wa data-msg="Hi Chhaya! I found your website and would like to book / ask about your work.">
+        <svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg> WhatsApp
+      </a>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="home">
+  <svg class="hero-mandala" id="heroMandala" viewBox="-200 -200 400 400" aria-hidden="true">
+    <circle r="196"/><circle r="182" stroke-dasharray="1 9"/><circle r="150"/>
+    <circle r="132" stroke-dasharray="14 7"/><circle r="92"/><circle r="70" stroke-dasharray="1 8"/><circle r="34"/>
+  </svg>
+
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 class="hero-title">Mehndi for your hands, art for your walls.</h1>
+      <p class="hero-lead">Chhaya designs bridal and festive mehndi, and paints canvases, portraits and custom pieces. Every line is drawn by hand.</p>
+      <div class="hero-actions">
+        <a class="btn btn--gold" data-wa data-msg="Hi Chhaya! I'd like to book mehndi / artwork. Are you available?">
+          <svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg> Book on WhatsApp
+        </a>
+        <a class="btn btn--line" href="#gallery">See the gallery</a>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="false">
+      <div class="arch arch--mehndi">
+        <img src="images/bridel Mhandi.jpg" alt="Bridal vine mehndi design" fetchpriority="high">
+        <span class="chip">Mehndi</span>
+      </div>
+      <div class="arch arch--art">
+        <img src="images/A3.jpg" alt="Hand-painted peonies on canvas" fetchpriority="high">
+        <span class="chip">Art</span>
+      </div>
+      <!-- the henna vine that "draws itself" across both images (built by script.js) -->
+      <svg class="hero-vine" id="heroVine" viewBox="0 0 560 590" aria-hidden="true">
+        <path id="vinePath" d="M 20 570 C 110 480, 30 390, 170 350 S 340 310, 300 210 S 420 120, 545 25"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ GALLERY ============================ -->
+<section class="section gallery" id="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="h2">Work from the studio</h2>
+      <p class="lead">Mehndi on skin, paint on canvas. Tap any image to see it full screen.</p>
+    </div>
+
+    <div class="filters reveal" role="group" aria-label="Filter gallery">
+      <button class="filter is-active" data-filter="all" aria-pressed="true">All <span class="count" data-count="all"></span></button>
+      <button class="filter" data-filter="mehndi" aria-pressed="false">Mehndi <span class="count" data-count="mehndi"></span></button>
+      <button class="filter" data-filter="art" aria-pressed="false">Art <span class="count" data-count="art"></span></button>
+    </div>
+
+    <div class="masonry" id="masonry" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============================ FEATURED MEHNDI ============================ -->
+<section class="section feat feat--mehndi" id="featured-mehndi">
+  <div class="wrap feat-grid">
+    <div class="feat-text reveal">
+      <h2 class="h2">Featured mehndi</h2>
+      <p class="lead">Bridal vines, mandalas and peacock feathers, drawn freehand with natural henna. Designs are planned around your outfit, your hands and your day.</p>
+      <div class="feat-actions">
+        <a class="btn btn--gold" data-wa data-msg="Hi Chhaya! I'd like to book mehndi. My date is: ">
+          <svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg> Check my date
+        </a>
+        <button class="btn btn--line" data-filter-link="mehndi">See all mehndi</button>
+      </div>
+    </div>
+    <div class="feat-cards" id="featMehndi"></div>
+  </div>
+</section>
+
+<!-- ============================ FEATURED ART ============================ -->
+<section class="section feat feat--art" id="featured-art">
+  <div class="wrap feat-grid feat-grid--rev">
+    <div class="feat-cards" id="featArt"></div>
+    <div class="feat-text reveal">
+      <h2 class="h2">Featured art</h2>
+      <p class="lead">Florals, night skies and golden-hour landscapes, painted to sit in a real room. Choose one of these, or ask for something in the same spirit.</p>
+      <div class="feat-actions">
+        <a class="btn btn--dark" data-wa data-msg="Hi Chhaya! I'm interested in your paintings. Could you share what's available?">
+          <svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg> Ask about a painting
+        </a>
+        <button class="btn btn--line-dark" data-filter-link="art">See all art</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT ============================ -->
+<section class="section about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-photo reveal">
+      <div class="arch arch--about">
+        <img src="images/C1.jpeg" alt="Chhaya, mehndi and canvas artist" loading="lazy">
+      </div>
+    </div>
+    <div class="about-text reveal">
+      <h2 class="h2">Hi, I'm Chhaya.</h2>
+      <p>I started with a henna cone at family functions, and slowly picked up brushes too. Today I do both: mehndi for brides and celebrations, and paintings for homes and gifts.</p>
+      <p>I like work that feels personal. A bridal design can carry a name, a flower she loves, or a pattern from her family. A painting can be the view from a grandparent's window. Tell me the story, and I'll draw it.</p>
+      <dl class="about-list">
+        <div><dt>Mehndi</dt><dd>Natural henna paste, mixed fresh. Skin-safe and dark-staining.</dd></div>
+        <div><dt>Painting</dt><dd>Acrylic, watercolour and mixed media on canvas and paper.</dd></div>
+        <div><dt>Travel</dt><dd>Home visits for mehndi. Paintings can be shipped, carefully packed.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SERVICES ============================ -->
+<section class="section services" id="services">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="h2">What I can do for you</h2>
+      <p class="lead">Six ways to work together. Not sure which fits? Send a message and we'll figure it out.</p>
+    </div>
+
+    <ul class="service-list">
+      <li class="service">
+        <div class="svc-title"><span class="svc-kind">Mehndi</span><h3>Bridal mehndi</h3></div>
+        <p>Full hands and feet with detailed motifs, names and personal symbols. Book early for wedding season, and we'll plan a trial if you'd like one.</p>
+        <a class="svc-link" data-wa data-msg="Hi Chhaya! I'd like to know more about Bridal mehndi.">Ask on WhatsApp</a>
+      </li>
+      <li class="service">
+        <div class="svc-title"><span class="svc-kind">Mehndi</span><h3>Party &amp; festival mehndi</h3></div>
+        <p>Karva Chauth, Teej, Eid, sangeet nights and baby showers. Single guests or a full group, with quick and elegant designs.</p>
+        <a class="svc-link" data-wa data-msg="Hi Chhaya! I'd like to know more about Party / festival mehndi.">Ask on WhatsApp</a>
+      </li>
+      <li class="service">
+        <div class="svc-title"><span class="svc-kind">Mehndi</span><h3>Arabic &amp; minimal mehndi</h3></div>
+        <p>Light, flowing designs for everyday, office or as a wedding guest. Finger trails, wrist bands and single-motif styles.</p>
+        <a class="svc-link" data-wa data-msg="Hi Chhaya! I'd like to know more about Arabic / minimal mehndi.">Ask on WhatsApp</a>
+      </li>
+      <li class="service">
+        <div class="svc-title"><span class="svc-kind">Art</span><h3>Canvas paintings</h3></div>
+        <p>Florals, landscapes and abstracts in acrylic or mixed media. Pick a finished piece, or choose a size and palette to match your room.</p>
+        <a class="svc-link" data-wa data-msg="Hi Chhaya! I'd like to know more about Canvas paintings.">Ask on WhatsApp</a>
+      </li>
+      <li class="service">
+        <div class="svc-title"><span class="svc-kind">Art</span><h3>Portraits &amp; gift art</h3></div>
+        <p>Turn a favourite photo into a hand-painted portrait of a couple, a family, a pet or a place. A gift that people keep for years.</p>
+        <a class="svc-link" data-wa data-msg="Hi Chhaya! I'd like to know more about Portraits / gift art.">Ask on WhatsApp</a>
+      </li>
+      <li class="service">
+        <div class="svc-title"><span class="svc-kind">Art</span><h3>Wall art &amp; decor</h3></div>
+        <p>Large statement canvases, mandala art and decor pieces for homes, cafes and studios, made to your dimensions.</p>
+        <a class="svc-link" data-wa data-msg="Hi Chhaya! I'd like to know more about Wall art / decor.">Ask on WhatsApp</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ CUSTOM ARTWORK ============================ -->
+<section class="section custom" id="custom">
+  <div class="wrap custom-grid">
+    <div class="custom-text reveal">
+      <h2 class="h2">Have something specific in mind?</h2>
+      <p class="lead">Custom artwork starts with a conversation. Here's how it works.</p>
+      <ol class="steps">
+        <li><strong>Tell me the idea.</strong> Share a photo, a colour palette, a size, or just a feeling. Rough is fine.</li>
+        <li><strong>Approve the plan.</strong> I send a quick sketch or design and we agree on the price and timeline.</li>
+        <li><strong>I make it.</strong> You get progress photos, and small changes are welcome along the way.</li>
+        <li><strong>It reaches you.</strong> Mehndi at your venue, or your painting carefully packed and delivered.</li>
+      </ol>
+    </div>
+
+    <div class="card reveal" id="customForm">
+      <h3 class="card-title">Send your request</h3>
+      <div class="field">
+        <label for="fName">Your name</label>
+        <input id="fName" name="name" type="text" autocomplete="name" placeholder="e.g. Ananya" required>
+      </div>
+      <div class="field">
+        <label for="fType">What do you need?</label>
+        <select id="fType" name="type">
+          <option>Bridal mehndi</option>
+          <option>Party / festival mehndi</option>
+          <option>Canvas painting</option>
+          <option>Portrait from a photo</option>
+          <option>Wall art / decor</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="fWhen">Date or size</label>
+        <input id="fWhen" name="when" type="text" placeholder="e.g. 14 Feb, or 24 x 36 inch canvas">
+      </div>
+      <div class="field">
+        <label for="fMsg">Tell me more</label>
+        <textarea id="fMsg" name="msg" rows="4" placeholder="Colours, style, references, where it will be used..." required></textarea>
+      </div>
+      <div class="card-actions">
+        <button type="button" class="btn btn--dark" data-send="wa"><svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg> Send on WhatsApp</button>
+        <button type="button" class="btn btn--line-dark" data-send="mail"><svg class="ico" data-icon="mail" viewBox="0 0 24 24" aria-hidden="true"></svg> Send by email</button>
+      </div>
+      <p class="fine">This opens WhatsApp or your email app with your message filled in. Nothing is stored on this website.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============== -->
+<section class="section contact" id="contact">
+  <div class="wrap">
+    <div class="contact-card reveal">
+      <h2 class="h2">Let's plan your mehndi or artwork.</h2>
+      <p class="lead">Message Chhaya with your date, idea or a reference photo. She'll reply with availability and next steps.</p>
+      <div class="contact-actions">
+        <a class="btn btn--gold btn--lg" data-wa data-msg="Hi Chhaya! I'd like to book mehndi / artwork. Are you available?">
+          <svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg> Chat on WhatsApp
+        </a>
+        <a class="btn btn--line btn--lg" data-mail data-subject="Enquiry from your website" data-body="Hi Chhaya,%0D%0A%0D%0AI'd like to ask about ">
+          <svg class="ico" data-icon="mail" viewBox="0 0 24 24" aria-hidden="true"></svg> Send an email
+        </a>
+      </div>
+      <p class="contact-meta"><a data-mail-text></a><span data-wa-text></span></p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>
+      <p class="footer-brand">Chhaya Mehndi &amp; Arts</p>
+      <p class="footer-tag">Haathon par mehndi, deewaron par rang.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#custom">Custom art</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p class="footer-copy">&copy; <span id="year"></span> Chhaya Mehndi &amp; Arts. All artwork belongs to the artist.</p>
+  </div>
+</footer>
+
+<!-- floating WhatsApp button -->
+<a class="fab" id="fab" data-wa data-msg="Hi Chhaya! I'd like to book mehndi / artwork." aria-label="Chat on WhatsApp">
+  <svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg>
+</a>
+
+<!-- ============================ LIGHTBOX ============================ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview" hidden>
+  <button class="lb-btn lb-close" id="lbClose" aria-label="Close preview">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19"/></svg>
+  </button>
+  <button class="lb-btn lb-nav lb-prev" id="lbPrev" aria-label="Previous image">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4l-8 8 8 8"/></svg>
+  </button>
+  <figure class="lb-fig">
+    <div class="lb-stage"><img id="lbImg" alt=""></div>
+    <figcaption class="lb-cap">
+      <div>
+        <span class="lb-cat" id="lbCat"></span>
+        <strong class="lb-title" id="lbTitle"></strong>
+      </div>
+      <div class="lb-right">
+        <span class="lb-count" id="lbCount"></span>
+        <a class="btn btn--gold btn--sm" id="lbAsk" data-wa-dynamic>
+          <svg class="ico" data-icon="wa" viewBox="0 0 24 24" aria-hidden="true"></svg> Ask about this
+        </a>
+      </div>
+    </figcaption>
+  </figure>
+  <button class="lb-btn lb-nav lb-next" id="lbNext" aria-label="Next image">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8"/></svg>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

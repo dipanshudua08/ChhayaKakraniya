@@ -1,5 +1,4 @@
 
-
 :root {
   --cream: #f5edda;
   --paper: #faf5e8;
@@ -42,7 +41,6 @@ h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
 ul, ol { padding: 0; list-style: none; }
 
 :focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
-
 .skip { position: absolute; left: -999px; top: 8px; background: var(--gold-lt); color: var(--green); padding: .6rem 1rem; z-index: 200; border-radius: 6px; }
 .skip:focus { left: 8px; }
 
@@ -94,7 +92,6 @@ ul, ol { padding: 0; list-style: none; }
   transition: color .35s;
   --brand-vein: var(--green);
 }
-
 .nav::before {
   content: ""; position: absolute; inset: 0; z-index: -1;
   background: rgba(245, 237, 218, .92);
@@ -147,8 +144,6 @@ ul, ol { padding: 0; list-style: none; }
   body.menu-open .burger { color: var(--cream); }
   body.menu-open { overflow: hidden; }
 }
-
-
 .hero {
   position: relative; overflow: hidden;
   background:
@@ -203,7 +198,6 @@ ul, ol { padding: 0; list-style: none; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-art { margin: 1rem auto 0; width: min(430px, 92%); }
 }
-
 /* ---------------------- gallery */
 .gallery { background: var(--cream); }
 .filters { display: flex; flex-wrap: wrap; gap: .7rem; margin-bottom: 2rem; }
@@ -219,7 +213,6 @@ ul, ol { padding: 0; list-style: none; }
 .masonry { columns: 4; column-gap: 1.1rem; }
 @media (max-width: 1100px) { .masonry { columns: 3; } }
 @media (max-width: 760px) { .masonry { columns: 2; column-gap: .7rem; } }
-
 .tile {
   position: relative; display: block; width: 100%;
   margin: 0 0 1.1rem; padding: 0; border: 0;
@@ -264,14 +257,11 @@ ul, ol { padding: 0; list-style: none; }
 .tile:hover .tile-cat, .tile:focus-visible .tile-cat,
 .tile:hover .tile-zoom, .tile:focus-visible .tile-zoom { opacity: 1; transform: none; }
 .tile:hover .tile-cap, .tile:focus-visible .tile-cap { opacity: 1; transform: none; }
-
-
 @media (hover: none) {
   .tile::after { opacity: 1; background: linear-gradient(to top, rgba(15, 38, 29, .75) 0%, transparent 42%); }
   .tile-cap { opacity: 1; transform: none; font-size: 1rem; padding: .7rem .8rem; }
   .tile-cat, .tile-zoom { display: none; }
 }
-
 .tile.pop { animation: pop .6s var(--ease) both; }
 @keyframes pop { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
 .tile.is-hidden { display: none; }
@@ -378,7 +368,6 @@ ul, ol { padding: 0; list-style: none; }
   .service { grid-template-columns: 1fr; gap: .7rem; padding: 1.5rem .5rem 1.5rem 1rem; }
   .svc-link { justify-self: start; }
 }
-
 /* ---------------------------------------------------------------- custom */
 .custom {
   background:

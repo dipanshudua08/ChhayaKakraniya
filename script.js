@@ -2,20 +2,12 @@
 
 document.documentElement.classList.add('js');
 
-/* ------------------------------------------------------------------ CONFIG */
+/* ----------------------------------------------------------------- CONFIG */
 const CONFIG = {
   whatsapp: '917618283669',        // country code + number, bina + aur space ke (India: 91XXXXXXXXXX)
   phoneDisplay: '+91 76182 83669', // jo contact section me dikhana hai
   email: 'chhayakakraniya@gmail.com'
 };
-
-/* ------------------------------------------------------------------ GALLERY DATA
-   file     : images/ folder ke andar ki file ka naam
-   cat      : 'mehndi' ya 'art'
-   title    : hover / preview me dikhne wala naam
-   feat     : 1, 2, 3 = Featured section me dikhegi (us order me)
-   shape    : 'arch' = upar se gol (mehrab) shape, tall images ke liye achha lagta hai
-*/
 const GALLERY = [
   { file: 'bridel Mhandi.jpg', cat: 'mehndi', title: '',       feat: 1, shape: 'arch' },
   { file: 'A2.jpg',    cat: 'art',    title: '',       feat: 2 },
